@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    --link-color:rgb(117, 239, 243);
+
+}
+body{
+    background-color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    max-width: 1400px;
+    margin:0 auto;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    height:130px;
+    align-items: center;
+    color:rgb(117, 239, 243) ;
+    text-decoration: none;
+}
+.left a{
+    color: rgb(117, 239, 243);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.right a{
+    color: rgb(117, 239, 243);
+    padding:0px;
+    margin-right: 30px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.left a:hover{
+    color:white;
+    transition: .1s;
+}
+.right a:hover{
+    color:white;
+    transition: .1s;
+}
+.right a:last-child{
+    background-color: rgb(117, 239, 243);
+    color: black;
+    padding: 4px 8px;
+}
+.right span{
+    margin-left:8px;
+}
+@media(max-width:600px){
+    nav{
+        padding: 0 10px;
+    }
+    .right a span{
+        display:none;
+    }
+    .right a:last-child{
+    background-color:black;
+    color:  rgb(117, 239, 243);
+    padding: 0px;
+}
+}
+.hero{
+    display:flex ;
+    justify-content: space-between;
+    padding:30px;
+    margin:50px 0;
+    align-items: center;
+    gap:50px;
+    margin-bottom: 100px;
+}
+.hero .text h1{
+    font-size: 45px;
+    color: rgb(117, 239, 243);
+}
+.hero .text p{
+    font-size: 18px;
+}
+.hero .links{
+    margin-top: 25px;
+}
+.hero .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border:2px solid rgb(117, 239, 243);
+    border-radius: 5px;
+    align-items: center;
+    color:rgb(117, 239, 243) ;
+    margin:5px;
+    margin-bottom: 5px;
+}
+.hero .links a:hover{
+    border:2px solid white;
+    color:white ;
+    transition: .1s;
+
+}
+.hero .photo img{
+    border-radius: 50%;
+}
+.hero .photo {
+    display: flex;
+    justify-content:right ;
+}
+@media(max-width:600px){
+    .hero .text h1{
+        font-size: 35px;
+    }
+}
+@media(max-width:500px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .testimony .gp{
+        flex-direction: column;
+    }
+    .contact .gp{
+        flex-direction: column;
+    }
+}
+.skills .text h1{
+    font-size: 45px;
+    color: rgb(117, 239, 243);
+    text-align: center;
+}
+.skills .text p{
+    font-size: 18px;
+
+}
+.skills{
+    justify-content: space-between;
+    padding:30px;
+    margin:50px 0;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.skills .cells{
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(117, 239, 243) ;
+    margin:5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills .cells .cell{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin:5px ;
+    border:1.5px solid grey;
+    border-radius: 2px;
+}
+.testimony{
+    justify-content: space-between;
+    padding:30px;
+    margin:50px 0;
+    align-items: center;
+    margin-bottom:100px;
+}
+.testimony h1{
+    font-size: 45px;
+    color: rgb(117, 239, 243);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.testimony .gp{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+.testimony .gp .shakal img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimony .gp .shakal{
+    text-align: center;
+}
+.testimony .gp .shakal p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.testimony .gp .shakal p:last-child{
+    font-weight: normal;
+}
+.testimony .gp .text p{
+    font-size: 18px;
+}
+.contact{
+    padding:0 30px;
+    margin-bottom: 100px;
+}
+.contact h1{
+    font-size: 45px;
+    color: rgb(117, 239, 243);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.contact .gp{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.contact .gp .text p{
+    font-size: 18px;
+}
+.contact .gp .text{
+    flex: 3;
+}
+.contact .gp .form {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact .gp .form input, 
+.contact .gp .form textarea{
+    border: 2px solid rgb(117, 239, 243);
+    border-radius: 5px;
+    width:400px;
+    height: 30px;
+    background-color: black;
+    color:white;
+}
+.contact .gp .form button{
+    font-size: 15px;
+    margin-left: 120px;
+    border: 2px solid white;
+    border-radius:15px;
+    width:150px;
+    height: 40px;
+    margin-top: 10px;
+    background-color:rgb(117, 239, 243);
+    cursor: pointer;
+    transition: .2s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.contact .gp .form button:hover{
+    filter: brightness(.8);
+
+}
